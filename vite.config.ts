@@ -23,9 +23,9 @@ export default defineConfig((configEnv) => ({
   build: {
     lib: {
       entry: resolve('src', 'index.ts'),
-      name: 'kreattix-library-base',
-      formats: ['es', 'umd'],
-      fileName: (format) => `index.${format}.js`,
+      name: 'kreattix-design-icons',
+      formats: ['es', 'cjs'],
+      fileName: (format) => `index${format === 'cjs' ? '' : '.' + format}.js`,
     },
     sourcemap: true,
     minify: 'esbuild',

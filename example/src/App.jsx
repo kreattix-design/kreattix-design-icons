@@ -1,6 +1,6 @@
 import './App.css'
 
-import { Helloworld } from 'kreattix-library-base'
+import { Close, CloseCircleFilled, CloseCircleToned } from 'kreattix-design-icons'
 
 import reactLogo from './assets/react.svg'
 
@@ -8,7 +8,9 @@ function App() {
   return (
     <div className="App">
       <div>
-        <Helloworld />
+        <Close />
+        <CloseCircleFilled />
+        <CloseCircleToned />
         <a href="https://vitejs.dev" target="_blank">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
         </a>
