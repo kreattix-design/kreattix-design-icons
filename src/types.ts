@@ -1,5 +1,3 @@
-import { ReactNode } from 'react'
-
 export type IconNames =
   | 'Logo'
   | 'Close'
@@ -11,6 +9,9 @@ export type IconNames =
   | 'ArrowLeft'
   | 'ArrowRight'
 
-export type IconNameListProps = {
-  [key in IconNames]: string | ReactNode
+export interface IconNameListProps {
+  [key: string]:
+    | string
+    | React.FunctionComponent<Record<string, unknown>>
+    | React.ComponentClass<Record<string, unknown>, unknown>
 }
