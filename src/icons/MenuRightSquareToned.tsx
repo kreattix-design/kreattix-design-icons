@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { SVGProps } from 'react'
-const SvgArrowRightSquareToned = (props: SVGProps<SVGSVGElement>) => (
+const SvgMenuRightSquareToned = (props: SVGProps<SVGSVGElement>) => (
   <svg
     width="1em"
     height="1em"
@@ -21,11 +21,11 @@ const SvgArrowRightSquareToned = (props: SVGProps<SVGSVGElement>) => (
       strokeWidth={1.4}
     />
     <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M19.452 12.325a.849.849 0 0 1-.184.276l-5.334 5.333a.85.85 0 0 1-1.202-1.202l3.883-3.882H5.333a.85.85 0 1 1 0-1.7h11.282l-3.883-3.882a.85.85 0 0 1 1.202-1.202l5.334 5.333a.848.848 0 0 1 .184.926Z"
-      fill="currentColor"
+      d="M5.333 7.333h13.334M5.333 12h13.334M12 16.667h6.667"
+      stroke="currentColor"
+      strokeWidth={1.7}
+      strokeLinecap="round"
     />
   </svg>
 )
-export default SvgArrowRightSquareToned
+export default SvgMenuRightSquareToned
